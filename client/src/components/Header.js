@@ -8,7 +8,7 @@ class Header extends Component{
         switch (this.props.auth){
             case null:
             return ;    //still deciding
-            
+
             case false:
             return (
                 <li>
@@ -24,7 +24,7 @@ class Header extends Component{
     }
 
     render(){
-        
+
         console.log(this.props);
         return (
             <nav>
@@ -43,3 +43,4 @@ function mapStateToProps({auth}){
     return {auth};
 }
 export default connect(mapStateToProps)(Header);
+// hello this is the change

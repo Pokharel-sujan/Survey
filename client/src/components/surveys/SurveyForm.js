@@ -98,7 +98,7 @@ class SurveyForm extends Component {
 		// helper function
 		return _.map(formFields, ({label, name}) =>{
 			return (
-				<Field 
+				<Field
 				Key ={name}
 				component={SurveyField}
 				type={"text"}
@@ -107,9 +107,9 @@ class SurveyForm extends Component {
 			);
 			});
 		}
-			
-		
-	
+
+
+
 	render() {
 		return (
 			<div>
@@ -160,3 +160,4 @@ export default reduxForm({
 })(SurveyForm); // redux form helper  takes 1 parameter
 
 // this will initialize and configures surveyform.  so we write the name of form afterwards
+// hello this is the change

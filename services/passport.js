@@ -21,7 +21,7 @@ passport.deserializeUser((id, done)=>{
 
 
 passport.use( new GoogleStrategy(
-    { 
+    {
       clientID: keys.googleClientID,
       clientSecret: keys.googleClientSecret,
       callbackURL: "/auth/google/callback",
@@ -33,8 +33,8 @@ passport.use( new GoogleStrategy(
 
         if (existingUser){
             return done(null, existingUser);      // we already have a record with the given profile ID
-        } 
-           
+        }
+
         const user = await new User({googleId : profile.id}).save() //we don't have a user record with this ID, so make a new record
         done(null,user);
         }
@@ -43,3 +43,4 @@ passport.use( new GoogleStrategy(
 
 
 // app.get('/auth/google/callback', passport.authenticate('google))
+// hello this is the change
