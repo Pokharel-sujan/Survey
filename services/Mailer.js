@@ -10,7 +10,7 @@ class Mailer extends helper.Mail{
         this.from_email = new helper.Email('no-reply@emaily.com');
         this.subject = subject;
         this.body = new helper.Content('text/html',content);
-        this.recipients= this.formatAddresses(recipients);  
+        this.recipients= this.formatAddresses(recipients);
         // recipients will be gonna be array of helper.Email below with email as prop
 
         this.addContent(this.body); // from helper  mail
@@ -32,7 +32,7 @@ class Mailer extends helper.Mail{
     }
     addRecipients(){
         const personalize = new helper.Personalization();
-        
+
         this.recipients.forEach(recipient =>{
             personalize.addTo(recipient);
         });
@@ -56,3 +56,4 @@ class Mailer extends helper.Mail{
 // when there is like (new Mailer(...) , automatically there should be constructor, new )
 
 module.exports = Mailer;
+// hello this is the change

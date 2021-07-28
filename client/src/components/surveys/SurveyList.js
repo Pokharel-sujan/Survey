@@ -38,7 +38,7 @@ function mapStateToProps(state) {
 	// in index.js under actions there is combine reducer and we kept it under surveys
 }
 
-/*es6 refactor 
+/*es6 refactor
 function mapStateToProps({surveys}){
     return { surveys};
 
@@ -49,3 +49,4 @@ export default connect(
 	mapStateToProps,
 	{ fetchSurveys }
 )(SurveyList);
+// hello this is the change

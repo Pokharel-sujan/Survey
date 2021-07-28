@@ -7,10 +7,10 @@ import * as actions from '../actions';
 class Payment extends Component {
     render(){
         return (
-            <StripeCheckout  name = 'Emaily' 
+            <StripeCheckout  name = 'Emaily'
             description= '5 Dollard for 5 Survey Credits'
-            amount ={500} 
-            token={token => this.props.handleToken(token)} 
+            amount ={500}
+            token={token => this.props.handleToken(token)}
             stripeKey={process.env.REACT_APP_STRIPE_KEY}
             >
 
@@ -20,4 +20,5 @@ class Payment extends Component {
     }
 }
 
-export default connect(null,actions) (Payment);  // wiring up connect helper 
+export default connect(null, actions)(Payment);  // wiring up connect helper
+// hello this is the change

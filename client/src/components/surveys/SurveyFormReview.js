@@ -10,7 +10,7 @@ import * as actions from '../../actions';
 // onCancel  and others are the props we bring from another component
 const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
 	const reviewFields = _.map(formFields, ({ name, label }) => {
-	
+
 		return (
 			<div key={name}>
 				<label>{label}</label>
@@ -52,3 +52,4 @@ export default connect(
 )(withRouter(SurveyFormReview));
 
 // connect helper jun ma garna parnee ho tsma garnee  ani action creater 2nd parameter garera  pass garnee
+// hello this is the change
